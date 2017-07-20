@@ -181,6 +181,21 @@ nav.site-nav{
 	color:#fff;
 }
 
+.menu-item:first-child a img {
+    margin-top: -2px;
+}
+
+.menu-item:nth-child(n+1) {
+    /*text-transform: uppercase;*/
+}
+
+
+/*.navigationLogo a{
+	background-image: url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/logo/delcan&Company_logo.png');
+	background-repeat: no-repeat;
+	background-position: left;
+
+}*/
 
 /*
 .site-nav ul li a{
