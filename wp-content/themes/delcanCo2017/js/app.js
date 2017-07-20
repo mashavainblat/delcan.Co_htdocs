@@ -34,6 +34,30 @@ $( document ).ready(function() {
 	// });
 
 
+//if window <767, add <br> after first .menu-item
+//if window is resized & <767, add <br>
+$(function (){
+	console.log("my function");
+		if ($(window).width() < 767) {
+		     console.log('Less than 767');
+		     $("<br>").insertAfter($(".menu-item:first-child"));
+	  }
+	  else{
+	  	console.log(">767");
+	  }
+});
+
+$(window).resize(function(){
+	if ($(window).width()<767){
+		console.log("on resize, window<767");
+		$("<br>").insertAfter($(".menu-item:first-child"));
+	}
+	else{
+		console.log("on rezise, window>767");
+	}
+});
+
+
 });
 
 
