@@ -1,0 +1,536 @@
+/***************************************************
+	Theme Name: delcanCo2017
+	Author: Masha Vainblat
+	Version: 1.0
+***************************************************/
+
+/***************************************************/
+/* TESTING MASONRY GRID */
+.grid {
+  /*background: #EEE;*/
+  max-width: 100%;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-sizer, .grid-item {
+  width: 25%;
+  max-width:480px;
+}
+
+.grid-item {
+  height: 100%;
+  max-height:270px;
+  float: left;
+}
+
+.grid-item--width2 { 
+	width: 50%; 
+	max-width:960px;
+}
+
+.grid-item--height2 { 
+	height: 100%; 
+	max-height:540px; 
+}
+
+.grid-item img{
+	max-width:100%;
+}
+
+/***************************************************/
+/***************************************************/
+/***************************************************/
+
+
+
+/***************************************************/
+/***************************************************/
+/***************************************************/
+
+/* @import must be at top of file, otherwise CSS will not work */
+
+@font-face{
+	font-family:Plantin;
+	src:url('http://localhost:8888/wordpress/wp-content/uploads/fonts/Plantin.ttf');
+}
+
+@font-face{
+	font-family:Union;
+	src:url('http://localhost:8888/wordpress/wp-content/uploads/fonts/union_regular.otf');
+}
+
+/*****************************************************/
+
+
+
+*{
+	margin:0;
+	padding:0;
+}
+
+.noPadding{
+	padding:0;
+}
+
+.noMargin{
+	margin:0;
+}
+
+body{
+	background-color:#000;
+	margin:0;
+	color:#fff;
+	/*font-family:'unionregular';*/
+	cursor: url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/cursorSquareWhite.png'), auto;
+}
+
+/*
+.inverse{
+	background-color:#fff;
+	color:#000;
+}
+
+.invertNav{
+	color:#000 !important;
+	/*border-top:solid 5px #000;
+}
+
+.invertArrows{
+	filter:invert(100%);
+}*/
+
+
+/****************************/
+/* HEADER */
+
+section.site-header-nav{
+	margin:auto 0;
+	text-align: center;
+}
+.site-header, .site-nav{
+	display:inline-block;
+	/*margin:auto;*/
+}
+
+.site-header h1{
+	margin:0;
+}
+
+.site-header h1, .site-nav{
+	font-size:1em;
+}
+
+/****************************/
+/* NAVIGATION */
+
+/*.navigationLogo {
+background-image: url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/logo/logoWhite.png');
+background-repeat: no-repeat;
+background-position: left;
+padding-left: 5px;
+}*/
+
+nav.site-nav{
+	width:100%;
+	color:#fff;
+	/*position:fixed;*/
+	display:block;
+	/*margin-top:-20px;*/
+	z-index:100;
+}
+
+.site-nav ul{
+	margin:0;
+	padding:0;
+}
+
+.site-nav ul:before, .site-nav ul:after{ content:""; display: table;}
+.site-nav ul:after{clear:both;}
+.site-nav ul {*zoom:1;}
+
+.site-nav ul li{
+	list-style:none;
+	display:inline-block;
+}
+
+.site-nav ul li a{
+	font-family:Union, sans-serif;
+	display:inline-block;
+	padding:16px;
+	text-decoration: none;
+	color:#fff;
+	border-top:solid 5px rgba(255,255,255,0);
+	transition: border-top opacity 0 1s;
+}
+.site-nav ul li a:hover{
+	border-top:solid 5px #FFFFFF;
+	cursor:url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/hand/hand_white.png'), auto;
+}
+
+/* NOT WORKING BC IT'S NOT A MENU ITEM */
+.site-nav ul li.current-menu-item a{
+	border-top:solid 5px #FFF;
+	color:#fff;
+}
+
+
+/*
+.site-nav ul li a{
+	display:inline-block;
+	padding:16px;
+	text-decoration: none;
+	color:#fff;
+	transform: perspective(1px) translateZ(0);
+	-webkit-transform: perspective(1px) translateZ(0);
+	position:relative;
+	overflow:hidden;
+
+}
+
+.site-nav ul li a:before{
+	content:"";
+	position:absolute;
+	z-index:-1;
+	left:0;
+	right:0;
+	top:0;
+	background-color:#fff;
+	height:5px;
+	-webkit-transform: translateY(-5px);
+	transform: translateY(-5px);
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+
+.site-nav ul li a:hover:before, .site-nav ul li a:focus:before, .site-nav ul li a:active:before{
+	transform:translateY(0);
+	-webkit-transform:translateY(0);
+}
+
+.site-nav ul li.current-menu-item a{
+	border-top:solid 5px #FFF;
+	color:#fff;
+}*/
+
+/****************************/
+/* FEATURED PROJECTS PAGE*/
+img.featuredProjectThumbnail{
+	width:100%;
+}
+/****************************/
+/* PAGES */
+
+.projectsThumbnailsContainer{
+	padding:0px 4px;
+}
+
+.projectThumbnails{
+	position:relative;
+	overflow: hidden;
+	padding:8px 4px 0px 4px;
+}
+
+.projectThumbnails a:hover, .prevNextPosts a:hover{
+	cursor:url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/eyeCursorWhite_001.png'), auto;
+}
+
+.projectThumbnails img{
+	width:100%;
+	height:100%;
+	filter:grayscale(100%);
+	transition:filter 0.5s;
+	-webkit-transition:filter 0.5s;
+}
+
+.projectThumbnails img:hover{
+	filter:grayscale(0);
+}
+
+.projectThumbnails .projectTitleHoverContainer{
+	position:absolute;
+	width:100%;
+	bottom:0px;
+
+	height:0px;
+	transition:height 1s;
+	-webkit-transition:height 1s;
+	font-family:Plantin, serif;
+
+}
+
+.projectThumbnails:hover > .projectTitleHoverContainer{
+	height:29px;
+}
+
+.projectTitleHoverContainer a{
+	color:#000;
+}
+
+.projectTitleHoverContainer a:hover{
+	text-decoration: none;
+}
+
+.projectTitleHoverContainer h2{
+	font-size:1vw;
+	padding:8px;
+	background-color:rgba(255,255,255,0.5);
+	margin-right:8px;
+}
+
+
+/****************************/
+/* ARCHIVE */
+div#archiveProjectsContainer{
+	width:80%;
+	margin: 0 auto;
+}
+
+
+
+
+/****************************/
+/* SINGLE POST PAGE */
+#singleProjectPage .main-column{
+	width:80%;
+	margin:0 auto;
+}
+
+#singleProjectPage h2{
+	font-family: Plantin, serif;
+	font-family:2.5em;
+}
+
+.main-column .post{
+	font-family:serif;
+}
+
+.post{
+	margin:36px 0px;
+}
+
+.main-column .post-gallery img{
+	width:100%;
+	height:100%;
+}
+
+#gallery-1 img{
+	border:none !important;
+}
+
+#gallery-1 .gallery-item{
+	margin-top:0px !important;
+}
+
+.gallery-item{
+	margin-bottom:0;
+}
+
+.gallery-item{
+	margin-bottom:16px;
+}
+
+dl{
+	margin-bottom:16px;
+}
+
+.csdText{
+	font-size:2em;
+}
+
+.bottomText{
+	font-size:1.25em;
+}
+
+.gallery-caption{
+	text-align:left;
+	font-size:0.75em;
+	font-family: Union;
+	margin-top:5px;
+}
+
+h2.description{
+	font-family: Plantin;
+	font-size:3.5em;
+	letter-spacing: 2px;
+}
+
+p.credentials{
+	margin:0;
+	font-family:serif;
+	font-size:1.25em;
+	letter-spacing: 1px;
+}
+
+.credentialsFields{
+	margin-bottom:32px;
+}
+
+.prevNextPosts a{
+	color:#fff;
+	text-decoration: none;
+	font-size:0.9em;
+}
+
+.prevNextPosts img{
+	height:25px;
+}
+
+.prevPost img {
+    transform: rotate(180deg);
+}
+
+.nextPost{
+	text-align:right;
+}
+
+
+/*****************************************************/
+/* INTRODUCTORY */
+
+#introductoryPage{
+	font-size:2.5em;
+	/*font-family: Plantin, serif;*/
+	/*font-family: sans-serif;*/
+}
+
+#introductoryPage #introductory{
+	font-family:Plantin, serif;
+	/*padding: 0px 4px;*/
+	padding: 0px 20%;
+}
+
+#introductoryPage #introductory p{
+	line-height:1.25em;
+	margin:0px 0px 30px;
+}
+
+#introductoryPage span{
+	text-decoration: underline;
+}
+
+
+
+/*****************************************************/
+/* CONTACT */
+
+
+#contactPage{
+	margin-top:48px;
+}
+
+#contactInfo{
+	padding-left:20%;
+}
+
+#contactInfo div{
+	margin-bottom:16px;
+	letter-spacing: 2px;
+}
+
+#contactInfo p{
+	font-family: serif;
+	font-size: 2em;
+	margin:auto;
+}
+
+#contactInfo #social a{
+	color:#ffffff;
+}
+
+#contactInfo #social a:hover{
+	text-decoration: none;
+}
+
+
+#newsletterForm article.post.page{
+	margin:0;
+}
+
+#newsletterForm{
+	padding-right:20%;
+	letter-spacing: 2px;
+}
+
+
+#contactForm h4{
+	font-size:2em;
+	margin-bottom: 48px
+}
+
+#contactForm input{
+	background-color:rgba(0,0,0,0);
+	border:solid 1px;
+	text-align: center;
+	width:100%;
+	padding:16px 0px;
+	font-size:2em;
+}
+
+
+#subscribeInput input{
+	background-color:#fff;
+	border:solid 0px;
+	color:#000;
+}
+
+/****************************/
+/* FOOTER */
+#archiveProjectsContainer .site-footer{
+	position:absolute;
+	width:100%;
+}
+
+.site-footer{
+    /*position: absolute;*/
+    /*width: 100%;*/
+    /*bottom: 0;*/
+    border-top: solid 1px lightgrey;
+    padding: 10px 0px;
+    margin-top: 16px;
+    background-color:#000000;
+}
+
+
+footer.site-footer .row{
+	width: 80%;
+    margin: 0 auto;
+    padding:0px 4px;
+}
+
+footer.site-footer #copyright{
+	text-align: right;
+}
+
+footer.site-footer p{
+	margin:0;
+	font-size:9pt;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
