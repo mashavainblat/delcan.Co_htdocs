@@ -84,7 +84,7 @@
 	margin:0;
 }
 
-body{
+body, footer{
 	background-color:#000;
 	margin:0;
 	color:#fff;
@@ -139,7 +139,7 @@ padding-left: 5px;
 
 nav.site-nav{
 	width:100%;
-	color:#fff;
+	/*color:#fff;*/
 	/*position:fixed;*/
 	display:block;
 	/*margin-top:-20px;*/
@@ -169,8 +169,18 @@ nav.site-nav{
 	border-top:solid 5px rgba(255,255,255,0);
 	transition: border-top opacity 0 1s;
 }
+
+.invertNav{
+	color:#000 !important;
+	border-top:solid 5px rgba(0,0,0,0);
+}
+
 .site-nav ul li a:hover{
 	border-top:solid 5px #FFFFFF;
+}
+
+.site-nav ul li a.invertNav:hover{
+	border-top:solid 5px #000;
 }
 
 /* NOT WORKING BC IT'S NOT A MENU ITEM */
@@ -592,7 +602,6 @@ p.credentials{
     border-top: solid 1px lightgrey;
     padding: 10px 0px;
     margin-top: 16px;
-    background-color:#000000;
 }
 
 
@@ -637,9 +646,12 @@ body{
 
 
 
+/************************************************/
+/* Inverting everything */
 
-
-
-
+.invertBackgroundToWhite{
+	background-color:#fff;
+	color:#000;
+}
 
 

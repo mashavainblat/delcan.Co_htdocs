@@ -28,17 +28,8 @@
 
 		<?php wp_head(); ?>
 	</head>
-	<body <?php body_class(); ?> class="container">
+	<body <?php body_class(); ?> class="container invertBackgroundToWhite">
 
-<!-- 
-		<script>
-			$("body").click(function(){
-				$("body").toggleClass("inverse");
-			});
-			$("body").click(function(){
-				$("a").toggleClass("invertNav");
-			});
-		</script> -->
 
 
 		<section class="site-header-nav">
