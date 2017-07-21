@@ -40,7 +40,7 @@ if(have_posts()) :
 		// print_r(get_post_custom());
 		?>
 
-		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 noPadding noMargin projectThumbnails">
+		<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 noPadding noMargin projectThumbnails">
 			<a href="<?php the_permalink();?>"><?php the_post_thumbnail("large-thumbnail"); ?></a>
 			
 			<div class="projectTitleHoverContainer">
@@ -62,12 +62,12 @@ if(have_posts()) :
 
 <footer class="site-footer">
 	<div class="row">
-		<div class="col-lg-6 noPadding" id="address">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 noPadding" id="address">
 			<p>147 W 35th St. Suite 202</p>
 			<p>NY, New York, 10001</p>
 		</div>
 
-		<div class="col-lg-6 noPadding" id="copyright">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 noPadding" id="copyright">
 			<p>&copy; <?php echo date('Y');?> <?php bloginfo('name'); ?></p>
 		</div>
 	</div> <!-- row -->

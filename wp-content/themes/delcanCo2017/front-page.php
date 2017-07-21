@@ -82,6 +82,8 @@ if ($landingPosts->have_posts()) :
 	while ($landingPosts->have_posts()) : $landingPosts->the_post();
 	//output content
 
+?> <section id="featuredProjects"><?php 
+
 	$taxonomy = get_the_terms(get_post(),"thumbnail-size"); $hasLargeThumbnail = false; $hasSmallThumbnail = true;
 
 	if($taxonomy){
@@ -121,7 +123,8 @@ if ($landingPosts->have_posts()) :
 	
 	<?php 
 	endwhile;
-
+?>
+</section> <?php
 	else:
 		// no content message here
 
