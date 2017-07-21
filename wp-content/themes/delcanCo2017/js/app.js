@@ -36,27 +36,37 @@ $( document ).ready(function() {
 
 //if window <767, add <br> after first .menu-item
 //if window is resized & <767, add <br>
-$(function (){
-	console.log("my function");
-		if ($(window).width() < 767) {
-		     console.log('Less than 767');
-		     $("<br>").insertAfter($(".menu-item:first-child"));
-	  }
-	  else{
-	  	console.log(">767");
-	  }
-});
+// $(function (){
+// 	console.log("my function");
+// 		if ($(window).width() < 767) {
+// 		     console.log('Less than 767');
+// 		     $("<br>").insertAfter($(".menu-item:first-child"));
+// 	  }
+// 	  else{
+// 	  	console.log(">767");
+// 	  }
+// });
 
-$(window).resize(function(){
-	if ($(window).width()<767){
-		console.log("on resize, window<767");
-		$("<br>").insertAfter($(".menu-item:first-child"));
-	}
-	else{
-		console.log("on rezise, window>767");
-	}
-});
+// $(window).resize(function(){
+// 	if ($(window).width()<767){
+// 		console.log("on resize, window<767");
+// 		$("<br>").insertAfter($(".menu-item:first-child"));
+// 	}
+// 	else{
+// 		console.log("on rezise, window>767");
+// 	}
+// });
 
+// $(window).resize(function(){
+// 	if ($(window).width() < 767 && $("ul#menu-primary-menu-links br")){
+// 		console.log("width <767 and there's a break")
+// 	}
+// 	else if($(window).width() < 767 && !$("<br>") ){
+// 		console.log("width <767 and there's no break")
+// 	}
+// })
+
+$("<br>").insertAfter($(".menu-item:first-child"));
 
 });
 

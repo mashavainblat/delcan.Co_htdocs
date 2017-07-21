@@ -11,10 +11,10 @@ get_header();
 <!-- if big one, then make row with one big and 4 small -->
 <!-- if no big then make 8 in row -->
 
-<h1>front-page.php</h1>
+<!-- <h1>front-page.php</h1> -->
 
 <!-- MASONRY GRID w/ BOOTSTRAP -->
-<h1>Boostrap grid in Masonry Grid </h1>
+<!-- <h1>Boostrap grid in Masonry Grid </h1>
 <div class="grid">
 	<div class="grid-item">
 		<img src="http://i.imgur.com/jXn8Kxt.jpg">
@@ -43,7 +43,7 @@ get_header();
 	<div class="grid-item">
 		<img src="http://i.imgur.com/nJZr4zS.jpg">
 	</div>
-</div>
+</div> -->
 
 
 <?php
