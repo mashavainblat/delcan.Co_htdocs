@@ -6,6 +6,12 @@
 
 /***************************************************/
 /* TESTING MASONRY GRID */
+
+#testing img{
+	max-width:100%;
+}
+
+
 .grid {
   /*background: #EEE;*/
   max-width: 100%;

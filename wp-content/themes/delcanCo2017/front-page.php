@@ -5,45 +5,25 @@ get_header();
 ### Loop code
 ?>
 
-<!-- <h1>FRONT-PAGE PAGE AKA LANDING</h1> -->
-
-<!-- in loop check if in next 8 posts. -->
-<!-- if big one, then make row with one big and 4 small -->
-<!-- if no big then make 8 in row -->
-
-<!-- <h1>front-page.php</h1> -->
-
-<!-- MASONRY GRID w/ BOOTSTRAP -->
-<!-- <h1>Boostrap grid in Masonry Grid </h1>
-<div class="grid">
-	<div class="grid-item">
-		<img src="http://i.imgur.com/jXn8Kxt.jpg">
-	</div>
-	
-	<div class="grid-item">
-		<img src="http://i.imgur.com/S2jF10Y.jpg">
+<div class="row" id="testing">
+	<div class="col-lg-6">
+		<div class="col-lg-6"><img src="http://i.imgur.com/10456o2.jpg"></div>
+		<div class="col-lg-6"><img src="http://i.imgur.com/KYBH8LU.jpg"></div>
+		<div class="col-lg-6"><img src="http://i.imgur.com/zRkgsxb.jpg"></div>
+		<div class="col-lg-12"><img src="http://i.imgur.com/10456o2.jpg"></div>
+		<div class="col-lg-6"><img src="http://i.imgur.com/KYBH8LU.jpg"></div>
+		<div class="col-lg-6"><img src="http://i.imgur.com/zRkgsxb.jpg"></div>
 	</div>
 
-	<div class="grid-item grid-item--width2">
-		<img src="http://i.imgur.com/p44lcdp.jpg">
+	<div class="col-lg-6">
+		<div class="col-lg-6"><img src="http://i.imgur.com/10456o2.jpg"></div>
+		<div class="col-lg-6"><img src="http://i.imgur.com/KYBH8LU.jpg"></div>
+		<div class="col-lg-6"><img src="http://i.imgur.com/zRkgsxb.jpg"></div>
+		<div class="col-lg-6"><img src="http://i.imgur.com/10456o2.jpg"></div>
+		<div class="col-lg-6"><img src="http://i.imgur.com/KYBH8LU.jpg"></div>
+		<div class="col-lg-6"><img src="http://i.imgur.com/zRkgsxb.jpg"></div>
 	</div>
-
-	<div class="grid-item">
-		<img src="http://i.imgur.com/42EoHEm.jpg">
-	</div>
-
-	<div class="grid-item">
-		<img src="http://i.imgur.com/n4qW9ut.jpg">
-	</div>
-
-	<div class="grid-item">
-		<img src="http://i.imgur.com/yGlGm2e.jpg">
-	</div>
-
-	<div class="grid-item">
-		<img src="http://i.imgur.com/nJZr4zS.jpg">
-	</div>
-</div> -->
+</div>
 
 
 <?php
@@ -83,6 +63,7 @@ if ($landingPosts->have_posts()) :
 	//output content
 
 ?> <section id="featuredProjects"><?php 
+
 
 	$taxonomy = get_the_terms(get_post(),"thumbnail-size"); $hasLargeThumbnail = false; $hasSmallThumbnail = true;
 
@@ -124,7 +105,9 @@ if ($landingPosts->have_posts()) :
 	<?php 
 	endwhile;
 ?>
-</section> <?php
+</section>
+<!-- END OF section#featuredProjects -->
+<?php
 	else:
 		// no content message here
 
