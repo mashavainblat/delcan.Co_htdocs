@@ -465,6 +465,12 @@ p.credentials{
 	text-align:right;
 }
 
+@media only screen and (max-width:767px){
+	.nextPost{
+		text-align: left;
+	}
+}
+
 
 /*****************************************************/
 /* INTRODUCTORY */
@@ -620,11 +626,11 @@ body{
 	cursor: url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/cursor/default/cursor_default_white_15x15.png'), auto;
 }
 
-.site-nav ul li a:hover{
+.prevNextPosts a:hover, .site-nav ul li a:hover, #contactPage a:hover, #subscribeInput input{
 	cursor:url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/cursor/hand/cursor_hand_white_25x40.png'), auto;
 }
 
-.projectThumbnails a:hover, .prevNextPosts a:hover{
+.projectThumbnails a:hover{
 	cursor:url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/cursor/eye/cursor_eye_white_40x25.png'), auto;
 }
 

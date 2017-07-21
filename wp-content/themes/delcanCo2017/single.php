@@ -53,7 +53,7 @@ get_header(); ?>
 
 
 			<div class="prevNextPosts row">
-				<div class="col-lg-6 prevPost">
+				<div class="col-lg-6 col-md-6 col-sm-6 prevPost">
 		 			<p>
 						<?php
 							echo previous_post_link('%link', '<img class="arrows" src="http://i.imgur.com/b3bZZQz.png"> %title',  true );
@@ -62,7 +62,7 @@ get_header(); ?>
 					</p>
 				</div> <!-- .prevPost -->
 
-				<div class="col-lg-6 nextPost">
+				<div class="col-lg-6 col-md-6 col-sm-6 nextPost">
 					<p>
 						<?php 
 							echo next_post_link('%link','%title <img class="arrows" src="http://i.imgur.com/b3bZZQz.png">', true );
