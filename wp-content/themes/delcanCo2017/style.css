@@ -89,7 +89,6 @@ body{
 	margin:0;
 	color:#fff;
 	/*font-family:'unionregular';*/
-	cursor: url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/cursor/default/cursor_default_white_15x15.png'), auto;
 }
 
 /*
@@ -172,7 +171,6 @@ nav.site-nav{
 }
 .site-nav ul li a:hover{
 	border-top:solid 5px #FFFFFF;
-	cursor:url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/cursor/hand/cursor_hand_white_25x40.png'), auto;
 }
 
 /* NOT WORKING BC IT'S NOT A MENU ITEM */
@@ -286,10 +284,6 @@ img.featuredProjectThumbnail{
 	position:relative;
 	overflow: hidden;
 	padding:8px 4px 0px 4px;
-}
-
-.projectThumbnails a:hover, .prevNextPosts a:hover{
-	cursor:url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/cursor/eye/cursor_eye_white_40x25.png'), auto;
 }
 
 .projectThumbnails img{
@@ -476,7 +470,7 @@ p.credentials{
 /* INTRODUCTORY */
 
 #introductoryPage{
-	font-size:2.5em;
+	font-size:5vmin;
 	/*font-family: Plantin, serif;*/
 	/*font-family: sans-serif;*/
 }
@@ -496,6 +490,11 @@ p.credentials{
 	text-decoration: underline;
 }
 
+@media only screen and (max-width:767px){
+	#introductoryPage #introductory{
+		padding: 0px 16px;
+	}
+}
 
 
 /*****************************************************/
@@ -561,6 +560,17 @@ p.credentials{
 	color:#000;
 }
 
+@media only screen and (max-width:767px){
+	#contactInfo{
+		padding-left:16px;
+	}
+
+	#newsletterForm{
+		padding-right:16px;
+		margin-top: 24px;
+	}
+}
+
 /****************************/
 /* FOOTER */
 #archiveProjectsContainer .site-footer{
@@ -603,10 +613,20 @@ footer.site-footer p{
 }
 
 
+/************************************************/
+/* CURSOR */
 
+body{
+	cursor: url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/cursor/default/cursor_default_white_15x15.png'), auto;
+}
 
+.site-nav ul li a:hover{
+	cursor:url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/cursor/hand/cursor_hand_white_25x40.png'), auto;
+}
 
-
+.projectThumbnails a:hover, .prevNextPosts a:hover{
+	cursor:url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/cursor/eye/cursor_eye_white_40x25.png'), auto;
+}
 
 
 

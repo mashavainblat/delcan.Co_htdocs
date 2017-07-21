@@ -5,7 +5,7 @@
 		
 		<div class="main-column">
 
-			<div class="col-lg-6" id="contactInfo">
+			<div class="col-lg-6 col-sm-12 col-xs-12" id="contactInfo">
 				<div id="location">
 					<p>info@delcan.co</p>
 					<p>914-602-7260</p>
@@ -29,7 +29,7 @@
 				</div>
 			</div> <!-- END .contactInfo -->
 
-			<div class="col-lg-6" id="newsletterForm">
+			<div class="col-lg-6 col-sm-12 col-xs-12" id="newsletterForm">
 				<?php
 				### Loop code
 				# if we have posts, do something:
