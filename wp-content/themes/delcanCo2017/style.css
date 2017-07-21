@@ -328,7 +328,14 @@ img.featuredProjectThumbnail{
 	padding:8px;
 	background-color:rgba(255,255,255,0.5);
 	margin-right:8px;
+	color:#000;
 }
+
+.projectTitleHoverContainer h2.invertProjectTitleHoverContainer{
+	background-color:rgba(0,0,0,0.5);
+	color:#fff;
+}
+
 
 
 @media only screen and (max-width: 767px){
@@ -658,17 +665,40 @@ body{
 	border-top:solid 5px #000;
 	cursor:url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/cursor/hand/cursor_hand_black_25x40.png'), auto;
 }
-/*
-.invertProjectCursor{
-	cursor:url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/cursor/eye/cursor_eye_black_40x25.png'), auto;
-}*/
+
+img.menu-image.menu-image-title-hide.invertLogo{
+	filter:invert(0.85);
+}
+
+.prevNextPosts a.invertHandCursor:hover,  
+#contactPage a.invertHandCursor:hover, 
+#subscribeInput input.invertHandCursor{
+	cursor:url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/cursor/hand/cursor_hand_black_25x40.png'), auto;
+}
+
 
 
 .projectThumbnails a.invertProjectCursor:hover{
 	cursor:url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/cursor/eye/cursor_eye_black_40x25.png'), auto;
 }
 
+.site-nav ul li.current-menu-item a.invertCurrentMenuTab{
+	border-top:solid 5px #000;
+	/*color:#fff;*/
+}
 
+.prevNextPosts a.invertLink,
+#contactInfo #social a.invertLink{
+	color:#000;
+}
 
+.prevNextPosts img.invertArrows{
+	filter:invert();
+}
 
+#subscribeInput input.invertInput{
+	background-color: #000;
+    border: solid 0px;
+    color: #fff;
+}
 

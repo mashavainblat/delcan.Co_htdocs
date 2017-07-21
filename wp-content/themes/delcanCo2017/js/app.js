@@ -7,11 +7,18 @@ $( document ).ready(function() {
 		$("footer").toggleClass("invertBackgroundToWhite");
 		$(".site-nav ul li a").toggleClass("invertNav");
 		$(".projectThumbnails a").toggleClass("invertProjectCursor");
+		$(".projectTitleHoverContainer h2").toggleClass("invertProjectTitleHoverContainer");
+		$(".site-nav ul li.current-menu-item a").toggleClass("invertCurrentMenuTab");
+		$(".prevNextPosts a").toggleClass("invertLink");
+		$("#contactInfo #social a").toggleClass("invertLink");
+		$(".prevNextPosts img").toggleClass("invertArrows");
+		$(".prevNextPosts a").toggleClass("invertHandCursor");
+		$("#contactPage a").toggleClass("invertHandCursor");
+		$("#subscribeInput input").toggleClass("invertHandCursor");
+		$("#subscribeInput input").toggleClass("invertInput");
+		$("img.menu-image.menu-image-title-hide").toggleClass("invertLogo");
+
 	});
-
-
-
-
 $("<br>").insertAfter($(".menu-item:first-child"));
 
 });
