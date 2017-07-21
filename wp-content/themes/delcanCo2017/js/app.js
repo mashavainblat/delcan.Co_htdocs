@@ -6,8 +6,15 @@ $( document ).ready(function() {
 		$("body").toggleClass("invertBackgroundToWhite");
 		$("footer").toggleClass("invertBackgroundToWhite");
 		$(".site-nav ul li a").toggleClass("invertNav");
-		console.log($(".site-nav ul li a"))
+		$(".projectThumbnails a").toggleClass("invertProjectCursor");
 	});
+
+
+
+
+$("<br>").insertAfter($(".menu-item:first-child"));
+
+});
 
 	// $("body").click(function(){
 	// 	console.log("clicking body")
@@ -33,11 +40,6 @@ $( document ).ready(function() {
 	//   itemSelector: '.grid-item',
 	//   layoutMode: 'fitRows'
 	// });
-
-$("<br>").insertAfter($(".menu-item:first-child"));
-
-});
-
 
 // $("button").mouseenter(function (){
 //   var srcI = $(".show").attr("src");

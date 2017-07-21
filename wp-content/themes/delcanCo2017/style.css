@@ -170,17 +170,8 @@ nav.site-nav{
 	transition: border-top opacity 0 1s;
 }
 
-.invertNav{
-	color:#000 !important;
-	border-top:solid 5px rgba(0,0,0,0);
-}
-
 .site-nav ul li a:hover{
 	border-top:solid 5px #FFFFFF;
-}
-
-.site-nav ul li a.invertNav:hover{
-	border-top:solid 5px #000;
 }
 
 /* NOT WORKING BC IT'S NOT A MENU ITEM */
@@ -636,7 +627,10 @@ body{
 	cursor: url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/cursor/default/cursor_default_white_15x15.png'), auto;
 }
 
-.prevNextPosts a:hover, .site-nav ul li a:hover, #contactPage a:hover, #subscribeInput input{
+.prevNextPosts a:hover, 
+.site-nav ul li a:hover, 
+#contactPage a:hover, 
+#subscribeInput input{
 	cursor:url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/cursor/hand/cursor_hand_white_25x40.png'), auto;
 }
 
@@ -652,6 +646,29 @@ body{
 .invertBackgroundToWhite{
 	background-color:#fff;
 	color:#000;
+	cursor: url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/cursor/default/cursor_default_black_15x15.png'), auto;
 }
+
+.invertNav{
+	color:#000 !important;
+	border-top:solid 5px rgba(0,0,0,0);
+}
+
+.site-nav ul li a.invertNav:hover{
+	border-top:solid 5px #000;
+	cursor:url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/cursor/hand/cursor_hand_black_25x40.png'), auto;
+}
+/*
+.invertProjectCursor{
+	cursor:url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/cursor/eye/cursor_eye_black_40x25.png'), auto;
+}*/
+
+
+.projectThumbnails a.invertProjectCursor:hover{
+	cursor:url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/cursor/eye/cursor_eye_black_40x25.png'), auto;
+}
+
+
+
 
 
