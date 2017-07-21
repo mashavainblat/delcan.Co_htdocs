@@ -22,6 +22,7 @@
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/masonry.pkgd.min.js"></script>
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/isotope.​pkgd.​min.js"></script>
 		
+		
 
 		<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/js/bootstrap-3.3.5-dist/css/bootstrap.min.css">
 

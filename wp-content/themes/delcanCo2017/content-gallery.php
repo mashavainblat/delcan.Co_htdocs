@@ -11,7 +11,9 @@
 			$obj = get_field('vimeo_field');
 
 			?>
-			<iframe src="//player.vimeo.com/video/<?php echo $obj->id; ?>" width="1152" height="646" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			<div class="vimeoContainer">
+				<iframe class="video" src="//player.vimeo.com/video/<?php echo $obj->id; ?>"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			</div>
 			<?php
 		}
 
