@@ -75,14 +75,14 @@ $landingPosts = new WP_Query('cat=6');
 	
 
 //running have_posts method on our object
-if ($landingPosts->have_posts()) :
+if ($landingPosts->have_posts()) : ?>
 
-
-
-	while ($landingPosts->have_posts()) : $landingPosts->the_post();
+<section id="featuredProjects">
+	
+<?php	while ($landingPosts->have_posts()) : $landingPosts->the_post();
 	//output content
 
-?> <section id="featuredProjects"><?php 
+?> <?php 
 
 	$taxonomy = get_the_terms(get_post(),"thumbnail-size"); $hasLargeThumbnail = false; $hasSmallThumbnail = true;
 
