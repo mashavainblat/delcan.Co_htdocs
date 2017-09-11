@@ -6,21 +6,21 @@
 
 /***************************************************/
 /* TESTING MASONRY GRID */
-.grid {
-  /*background: #EEE;*/
+/*.grid {
+  background: #EEE;
   max-width: 100%;
-}
+}*/
 
 /* clearfix */
-.grid:after {
+/*.grid:after {
   content: '';
   display: block;
   clear: both;
-}
+}*/
 
 /* ---- grid-item ---- */
 
-.grid-sizer, .grid-item {
+/*.grid-sizer, .grid-item {
   width: 25%;
   max-width:480px;
 }
@@ -43,7 +43,7 @@
 
 .grid-item img{
 	max-width:100%;
-}
+}*/
 
 /***************************************************/
 /***************************************************/
@@ -59,12 +59,12 @@
 
 @font-face{
 	font-family:Plantin;
-	src:url('http://localhost:8888/wordpress/wp-content/uploads/fonts/Plantin.ttf');
+	src:url('/wp-content/uploads/fonts/Plantin.ttf');
 }
 
 @font-face{
 	font-family:Union;
-	src:url('http://localhost:8888/wordpress/wp-content/uploads/fonts/union_regular.otf');
+	src:url('/wp-content/uploads/fonts/union_regular.otf');
 }
 
 /*****************************************************/
@@ -74,6 +74,7 @@
 *{
 	margin:0;
 	padding:0;
+	-webkit-font-smoothing: antialiased;
 }
 
 .noPadding{
@@ -107,7 +108,9 @@ body, footer{
 }*/
 
 
-/****************************/
+/************************************************************************************************************************************************/
+/************************************************************************************************************************************************/
+/************************************************************************************************************************************************/
 /* HEADER */
 
 section.site-header-nav{
@@ -124,14 +127,17 @@ section.site-header-nav{
 }
 
 .site-header h1, .site-nav{
-	font-size:1em;
+	font-size:1.1em;
+	font-weight:bold;
 }
 
-/****************************/
+/************************************************************************************************************************************************/
+/************************************************************************************************************************************************/
+/************************************************************************************************************************************************/
 /* NAVIGATION */
 
 /*.navigationLogo {
-background-image: url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/logo/logoWhite.png');
+background-image: url('/wp-content/themes/delcanCo2017/img/logo/logoWhite.png');
 background-repeat: no-repeat;
 background-position: left;
 padding-left: 5px;
@@ -180,10 +186,6 @@ nav.site-nav{
 	color:#fff;
 }
 
-.menu-item:first-child a img {
-    margin-top: -2px;
-}
-
 .menu-item:nth-child(n+1) {
     /*text-transform: uppercase;*/
 }
@@ -221,7 +223,7 @@ nav.site-nav{
 
 
 /*.navigationLogo a{
-	background-image: url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/logo/delcan&Company_logo.png');
+	background-image: url('/wp-content/themes/delcanCo2017/img/logo/delcan&Company_logo.png');
 	background-repeat: no-repeat;
 	background-position: left;
 
@@ -269,12 +271,16 @@ nav.site-nav{
 	color:#fff;
 }*/
 
-/****************************/
+/************************************************************************************************************************************************/
+/************************************************************************************************************************************************/
+/************************************************************************************************************************************************/
 /* FEATURED PROJECTS PAGE*/
 img.featuredProjectThumbnail{
 	width:100%;
 }
-/****************************/
+/************************************************************************************************************************************************/
+/************************************************************************************************************************************************/
+/************************************************************************************************************************************************/
 /* PAGES */
 
 .projectsThumbnailsContainer{
@@ -308,6 +314,7 @@ img.featuredProjectThumbnail{
 	transition:height 1s;
 	-webkit-transition:height 1s;
 	font-family:Plantin, serif;
+	-webkit-font-smoothing: antialiased;
 
 }
 
@@ -329,6 +336,7 @@ img.featuredProjectThumbnail{
 	background-color:rgba(255,255,255,0.5);
 	margin-right:8px;
 	color:#000;
+	letter-spacing: 2px;
 }
 
 .projectTitleHoverContainer h2.invertProjectTitleHoverContainer{
@@ -361,7 +369,9 @@ img.featuredProjectThumbnail{
 }
 
 
-/****************************/
+/************************************************************************************************************************************************/
+/************************************************************************************************************************************************/
+/************************************************************************************************************************************************/
 /* ARCHIVE */
 div#archiveProjectsContainer{
 	width:80%;
@@ -378,7 +388,9 @@ div#archiveProjectsContainer{
 }
 
 
-/****************************/
+/************************************************************************************************************************************************/
+/************************************************************************************************************************************************/
+/************************************************************************************************************************************************/
 /* SINGLE POST PAGE */
 #singleProjectPage .main-column{
 	width:80%;
@@ -388,6 +400,7 @@ div#archiveProjectsContainer{
 #singleProjectPage h2{
 	font-family: Plantin, serif;
 	font-family:2.5em;
+	-webkit-font-smoothing: antialiased;
 }
 
 .main-column .post{
@@ -442,6 +455,7 @@ h2.description{
 	font-family: Plantin;
 	font-size:3.5em;
 	letter-spacing: 2px;
+	-webkit-font-smoothing: antialiased;
 }
 
 p.credentials{
@@ -452,13 +466,46 @@ p.credentials{
 }
 
 .credentialsFields{
-	margin-bottom:32px;
+	margin:64px 0px;
 }
+
+.prevNextPosts.row {
+    position: relative;
+}
+
+.prevPost, .nextPost{
+	position: absolute;
+	padding:0;
+}
+
+@media only screen and (max-width:600px){
+	.nextPost img {
+	    /*float: left;*/
+	    margin-right: 5px;
+	}
+
+	.nextPost {
+	    right: 0;
+	    left: 12px;
+	    top: 40px;
+	}
+
+}
+
+.prevPost{
+	left:-8px;
+}
+
+.nextPost{
+	right:0;
+}
+
 
 .prevNextPosts a{
 	color:#fff;
 	text-decoration: none;
 	font-size:0.9em;
+    letter-spacing: .5px;
 }
 
 .prevNextPosts img{
@@ -495,7 +542,9 @@ p.credentials{
 }
 
 
-/*****************************************************/
+/************************************************************************************************************************************************/
+/************************************************************************************************************************************************/
+/************************************************************************************************************************************************/
 /* INTRODUCTORY */
 
 #introductoryPage{
@@ -508,6 +557,7 @@ p.credentials{
 	font-family:Plantin, serif;
 	/*padding: 0px 4px;*/
 	padding: 0px 20%;
+	-webkit-font-smoothing: antialiased;
 }
 
 #introductoryPage #introductory p{
@@ -526,7 +576,9 @@ p.credentials{
 }
 
 
-/*****************************************************/
+/************************************************************************************************************************************************/
+/************************************************************************************************************************************************/
+/************************************************************************************************************************************************/
 /* CONTACT */
 
 
@@ -601,74 +653,39 @@ p.credentials{
 	}
 }
 
-/****************************/
-/* FOOTER */
-#archiveProjectsContainer .site-footer{
-	position:absolute;
-	width:100%;
-}
+/************************************************************************************************************************************************/
+/************************************************************************************************************************************************/
+/************************************************************************************************************************************************/
 
-.site-footer{
-    /*position: absolute;*/
-    /*width: 100%;*/
-    /*bottom: 0;*/
-    border-top: solid 1px lightgrey;
-    padding: 10px 0px;
-    margin-top: 16px;
-}
-
-
-footer.site-footer .row{
-	width: 80%;
-    margin: 0 auto;
-    padding:0px 4px;
-}
-
-footer.site-footer #copyright{
-	text-align: right;
-	margin-top:17px;
-}
-
-footer.site-footer p{
-	margin:0;
-	font-size:9pt;
-}
-
-@media only screen and (max-width: 767px){
-	footer.site-footer .row{
-		width:100%;
-		padding: 0px 8px;
-	}
-}
-
-
-/************************************************/
 /* CURSOR */
 
 body{
-	cursor: url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/cursor/default/cursor_default_white_15x15.png'), auto;
+	cursor: url('/wp-content/themes/delcanCo2017/img/cursor/default/cursor_default_white_15x15.png'), auto;
 }
 
 .prevNextPosts a:hover, 
 .site-nav ul li a:hover, 
 #contactPage a:hover, 
 #subscribeInput input{
-	cursor:url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/cursor/hand/cursor_hand_white_25x40.png'), auto;
+	cursor:url('/wp-content/themes/delcanCo2017/img/cursor/hand/cursor_hand_white_25x40.png'), auto;
 }
 
 .projectThumbnails a:hover{
-	cursor:url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/cursor/eye/cursor_eye_white_40x25.png'), auto;
+	cursor:url('/wp-content/themes/delcanCo2017/img/cursor/eye/cursor_eye_white_40x25.png'), auto;
 }
 
 
 
-/************************************************/
+/************************************************************************************************************************************************/
+/************************************************************************************************************************************************/
+/************************************************************************************************************************************************/
+/************************************************************************************************************************************************/
 /* Inverting everything */
 
 .invertBackgroundToWhite{
 	background-color:#fff;
 	color:#000;
-	cursor: url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/cursor/default/cursor_default_black_15x15.png'), auto;
+	cursor: url('/wp-content/themes/delcanCo2017/img/cursor/default/cursor_default_black_15x15.png'), auto;
 }
 
 .invertNav{
@@ -678,7 +695,7 @@ body{
 
 .site-nav ul li a.invertNav:hover{
 	border-top:solid 5px #000;
-	cursor:url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/cursor/hand/cursor_hand_black_25x40.png'), auto;
+	cursor:url('/wp-content/themes/delcanCo2017/img/cursor/hand/cursor_hand_black_25x40.png'), auto;
 }
 
 img.menu-image.menu-image-title-hide.invertLogo{
@@ -688,13 +705,13 @@ img.menu-image.menu-image-title-hide.invertLogo{
 .prevNextPosts a.invertHandCursor:hover,  
 #contactPage a.invertHandCursor:hover, 
 #subscribeInput input.invertHandCursor{
-	cursor:url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/cursor/hand/cursor_hand_black_25x40.png'), auto;
+	cursor:url('/wp-content/themes/delcanCo2017/img/cursor/hand/cursor_hand_black_25x40.png'), auto;
 }
 
 
 
 .projectThumbnails a.invertProjectCursor:hover{
-	cursor:url('http://localhost:8888/wordpress/wp-content/themes/delcanCo2017/img/cursor/eye/cursor_eye_black_40x25.png'), auto;
+	cursor:url('/wp-content/themes/delcanCo2017/img/cursor/eye/cursor_eye_black_40x25.png'), auto;
 }
 
 .site-nav ul li.current-menu-item a.invertCurrentMenuTab{
